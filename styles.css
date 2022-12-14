@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Open+Sans:ital,wght@0,300;1,300;1,400&display=swap');
+
+
+body {
+    background-color: #f2ebe3;
+}
+
+.card {
+    width: 500px;
+    margin-top: 10%;
+    margin-left: 30%;
+    display: grid;
+    grid-template-columns: 60% 60%;
+}
+
+.content {
+    background-color: white;
+    padding-left: 8%;
+    padding-right: 10%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image {
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.muted {
+    color: #6c7289;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: bolder;
+    margin-top: -2%;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.price {
+    display: flex;
+    gap: 5%;
+    margin-top: -5%;
+}
+.current-price {
+    color: #3c8067;
+    font-size: 24px;
+    font-family: 'Fraunces', serif;
+}
+
+.previous-price {
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #6c7289;
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+button {
+    background-color: #3c8067;
+    color: white;
+    padding: 3px 80px 3px 80px;
+    border-radius: 1em;
+    border-color: white;
+    border: none;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    gap: 15%;
+}
+
+.button-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+/** Mobile **/
+@media only screen and (max-width: 375px) {
+    body {
+        width: 360px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        margin-left: 4.5%;
+    }
+
+    .image {
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 0%;
+        height: 300px;
+        width: 330px;
+    }
+
+    .content {
+        width: 303px;
+        padding-left: 5%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+    }
+
+    .current-price {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    button {
+        background-color: #3c8067;
+        color: white;
+        padding: 3px 110px 3px 110px;
+        margin-left: 0.2%;
+        border-radius: 1em;
+        border-color: white;
+        border: none;
+        display: grid;
+        grid-template-columns: 10% 90%;
+        align-items: center;
+        gap: 15%;
+    }
+  }
